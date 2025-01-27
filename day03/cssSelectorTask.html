@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS선택자 심화 실습</title>
+    <style>
+        /* 실습1 자손 선택자
+        container를 가진 모든 태그의 p태그 자손 요소에 대해서
+        텍스트 색상을 녹색으로 설정
+        -> color: green;으로 설정
+        */
+        .container p {
+            color:green;
+        }
+
+        /* 실습2 자식 선택자
+        first클래스를 가진 요소의 p태그 자식요소에 대해서
+        텍스트 색상을 red로 설정
+        */
+        .first > p {
+            color: red;
+        }
+
+        /* 실습3 형제 선택자
+        first 클래스를 가진 div 태그에 대해서
+        그 형제div 요소에 대해서 모두
+        font-weight: bold로 설정
+        */
+        div.first ~ div {
+            font-weight: bold;
+        }
+
+        /* 실습4 인접 형제 선택자
+        first클래스를 가진 div 태그의 인접 형제 div 태그에 대해서
+        그 자식 요소 p태그의 텍스트 색상을 brown으로 설정
+        */
+        div.first + div > p {
+            color: brown;
+        }
+
+        /* 종합실습(선택)
+        container 클래스를 가진 div 태그의 first 클래스를 가진 자손 요소를 선택
+        해당 요소의 인접 형제로 second 클래스를 가진 요소를 선택
+        해당 요소의 직계 자식 p태그에 대해서
+        background-color를 aquamarine으로 설정
+        */
+        div.container .first + .second > p  {
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <p>첫번째 자식의 p태그</p>
+        </div>
+        <div class="second">
+            <p>두번째 자식의 p태그</p>
+        </div>
+    </div>
+    
+</body>
+</html>

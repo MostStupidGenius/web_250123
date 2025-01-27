@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 전송을 위한 form태그</title>
+    <link rel="stylesheet" href="tag_form.css">
+</head>
+<body>
+    <div class="container">
+        <!-- form태그
+        데이터 전송을 위한 태그로, action 속성과 method 속성이 존재한다.
+        action: 해당 폼을 전송했을 때, 데이터 도착지 웹페이지 url을 입력한다.
+        만약 서버단이 완성되지 않은 상태라면 #을 적어넣어
+        이후에 추가할 예정이라는 것을 알려준다.
+        method: 데이터를 전송하는 방식을 표현.
+        get과 post 방식이 있다.
+        기본적으로 보안이 필요한 경우 post를 적어넣고
+        그외의 보안이 필요없는 부분은 get을 적어넣는다.
+        잘 모르겠다면 post(보안)를 기본값으로 놓자.
+        -->
+        <form class="form" action="#" method="post">
+            <!-- form 태그 안에는 정보를 받을 수 있는
+            여러 태그가 존재할 수 있다.
+            -->
+            <!-- input태그
+            입력을 받기 위한 대표적이고 가장 자주 쓰이는 태그다.
+            속성으로 type, name, value 등이 있는데,
+            type은 필수, 그외엔 선택적으로 입력한다.
+            type은 상호작용 요소의 종류를 결정하는 값이다.
+            name: 전송될 데이터의 이름을 설정하는 속성이다.
+            value: 각 요소의 초기값을 설정하는 속성으로,
+            버튼류의 경우 표시되는 문자를 설정하는 속성이다.
+            -->
+            <br>
+            <!-- input:text
+            한 줄의 텍스트를 입력받기 위한 타입
+            속성으로 placeholder를 설정하면 어떤 값을 입력해야 하는지
+            안내할 수 있다.
+            -->
+            <input type="text" 
+            name="" id="" 
+            placeholder="이름 입력: 예) 홍길동"
+            > 
+            
+            <br>
+            <!-- input:button
+            클릭하여 특정 기능을 호출, 수행할 수 있는 버튼 요소 생성
+            -->
+            <input type="button" value="버튼">
+            
+            <br>
+            <!-- password타입
+            input:password
+            입력된 내용을 가려준다.
+            maxlength 속성의 값을 숫자로 입력하면
+            해당 숫자 초과의 비밀번호를 입력할 수 없다.
+            -->
+            <input type="password"
+            name="" 
+            id="" 
+            placeholder="비밀번호"
+            maxlength="5"
+            >
+
+            <br>
+            <!-- submit input 요소
+            submit 요소는 조금 특별하다.
+            form태그의 정보를 전송하기 위한 요소이기 때문.
+            버튼처럼 생성되는 요소로, 해당 요소를 클릭하면
+            form 태그에서 action 속성에 적어놓은 경로로
+            웹페이지가 이동하며 데이터를 전송한다.
+            -->
+            <input type="submit" value="전송">
+
+        </form>
+    </div>
+</body>
+</html>

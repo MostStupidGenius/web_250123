@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textarea 태그</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <!-- 행의 개수를 설정 rows
+            설정행의 행의 개수만큼
+            textarea블록의 초기 크기가 정해진다.
+            설정한 행의 개수에 도달하면 사이드에 바가-->
+            <!-- 열의 개수를 설정 cols
+            cols의 값은 전달돤 값보다 1만큼 큰
+            열의 개수에 값을 입력할 수 있다.
+            -->
+            <textarea name="" id="" 
+            placeholder="빈 글"
+            rows="10"
+            cols="10"
+            <!-- style속성의 값으로 resize 여부를 조정할 수 있다. -->
+            style="resize: none;">
+            </textarea>
+            <br>
+            <br>
+            <!-- select 태그
+            드롭박스를 만드는 태그로, name속성으로 설정한 이름으로
+            전달되는 데이터의 값으로 선택한 option태그의 value값이 전달된다.
+            -->
+            <select name="fruits" id="fruits">
+                <optgroup>과일
+                    <option value="apple">사과</option>
+                    <option value="watermelon">수박</option>
+                    <option value="strawberry">딸기</option>
+                </optgroup>
+                <optgroup>지역
+                    <option value="">경기</option>
+                    <option value="">서울</option>
+                    <option value="">인천</option>
+                    <option value="">부산</option>
+                </optgroup>
+            </select>
+        </form>
+    </div>
+</body>
+</html>

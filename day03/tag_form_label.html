@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 태그의 label 태그 등</title>
+    <style>
+        #amsi {
+            display: inline-block;
+            width: 300px;
+            height: 150px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <!-- 명시적 라벨 연결 -->
+            <label for="btn">버튼 연결 라벨</label>
+            <input type="button" id="btn" value="버튼">
+            <!-- label 태그와 다른 form태그를 연결하려면
+            연결 대상 태그의 id 값을 for 속성의 값으로 입력하면 된다.
+            라벨 요소를 선택하더라도 for로 연결된 태그를 선택한 것과
+            같은 결과를 보여준다.
+            -->
+            <br>
+            <!-- 라벨 태그는 form 태그의 요소가 아니기 때문에
+            라벨의 for속성 대상으로 설정할 수 없다.
+            -->
+            <label for="label1">라벨을 연결한 라벨</label>
+            <br>
+            <label for="radiobtn" id="label1">라디오버튼 연결</label>
+            <br>
+            <input type="radio" id="radiobtn" name="">
+            <br>
+            
+            <!-- 암시적 라벨 연결 
+            라벨 태그 안에 연결하고자 하는 요소를 직접 넣어서
+            라벨 태그를 선택했을 떄 내부의 form태그 요소가
+            선택되도록 할 수 있다.
+            -->
+            <label id="amsi">
+                <input type="password" name="" id="">
+            </label>
+            <label for="submitBtn">제출하기</label>
+            <button type="submit" id="submitBtn" hidden>제출</button>
+            <br>
+            <br>
+            <br>
+            <label for="download">다운로드 진행률</label>
+            <progress id="download" value="70" max="100">70%</progress>
+        </form>
+    </div>
+</body>
+</html>

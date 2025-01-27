@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS선택자 심화</title>
+    <!-- 내부 스타일 시트 -->
+    <style>
+        /* 자손 선택자 ~
+        공백으로 부모 요소와 그 자손이 될 요소를 배치하면
+        해당 부모 요소 아래의 모든 깊이에 있는 자손 요소를 선택한다.
+        */
+        div.wrapper p {
+            color: blue;
+        }
+
+        /* 자식 선택자 >
+        자손 선택자가 모든 깊이의 자손 요소를 선택했다면
+        자식 선택자는 직계자식(바로 아래의 자식)요소를 선택하는 선택자다.
+        꺾쇠>를 이용해서 직계자식임을 표시한다.
+        자식 선택자는 자손 선택자에 비해 더 상세한, 자세한 선택자이기 때문에
+        자손 선택자에 비해 우선순위가 높다.
+        */
+        div.parent1 > p {
+            color: red;
+        }
+
+        /* 형제 선택자 ~
+        형제 선택자는 같은 부모태그를 가진 형제 태그를 선택하는 선택자로,
+        기준이 되는 요소 이후에 나오는 모든 형제를 선택하는 선택자다.
+        물결표~로 형제를 선택한다.
+        */
+        div.parent2 ~ div {
+            /* parent2 클래스를 가진 div 태그 이후에 나오는
+            모든 div 형제 태그에 대해서
+            배경색을 아쿠아마린 색으로 변경한다.
+            */
+            background-color: aquamarine; 
+        }
+
+        /* 인접 형제 선택자 +
+        기준이 되는 요소 이후에 등장하는 첫번째 형제 요소를 선택하는 선택자로,
+        더하기+기호로 인접 형제 요소를 선택할 수 있다.
+        */
+        
+        div.parent2 + div > p {
+            /* parent2 클래스를 가진 div 태그의 형제 태그 중
+            첫번째 div 태그의 직계 자식 태그인 p태그의 텍스트를 bold(굵게) 설정*/
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="parent1">
+            <p>첫번째 부모의 p태그</p>
+        </div>
+        <div class="parent2">
+            <p>두번째 부모의 p태그</p>
+        </div>
+        <div class="parent3">
+            <p>세번째 부모의 p태그</p>
+        </div>
+        <div class="parent4">
+            <p>4번째 부모의 p태그</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="outer">
+            <p>메인div안의 p태그</p>
+        </div>
+    </div>
+</body>
+</html>
