@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그(표)</title>
+    <style>
+        th, td, table, caption {
+            /* 외곽선을 한꺼번에 설정
+            1px: 외곽선의 두께
+            solid: 선의 종류
+            black: 선의 색깔
+            */
+            border: 1px solid black;
+            /* 외곽선 색 설정(따로 설정)*/
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- table 태그
+    테이블 태그는 표를 만들기 위한 태그로,
+    table 태그 안에 tr이라는 하나의 행을 나타내는 태그를 작성하고
+    그 한 행을 구성하는 th, td 등을 작성하는 것으로
+    표를 구현할 수 있다.
+    -->
+    <table>
+        <caption>
+            <!-- 표의 중앙 상단에 표 제목을 적기 위한 태그로
+            사용할지 말지는 자유이다.
+            -->
+            도서 목록
+        </caption>
+        <tr>
+            <!-- th 태그 - table header
+            th 태그는 표의 각 열의 데이터들을 가리키기 위한
+            대표적인 단어 적는 공간으로, 보통 header라고 부른다.
+            -->
+            <th>제목</th>
+            <th>내용</th>
+        </tr>
+        <tr>
+            <!-- td 태그 - table data
+            td 태그는 각 행의 해당 열에 값을 가리키기 위한 태그로
+            해당 공간(셀)에 데이터를 넣기 위해 사용하는 태그다.
+            -->
+            <td>어린 왕자</td>
+            <td>어린 왕자가 달에 가는 이야기</td>
+        </tr>
+        <tr>
+            <td>이솝우화</td>
+            <td>교훈적인 동화</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+th, td, table, caption {
+    /* 외곽선을 한꺼번에 설정
+    1px: 외곽선의 두께
+    solid: 선의 종류
+    black: 선의 색깔
+    */
+    border: 1px solid black;
+    /* 외곽선 색 설정(따로 설정)*/
+    border-color: black;
+}
