@@ -1,0 +1,82 @@
+.color {
+    /* 색깔에 대한 영단어로 적는 방식은
+    코드나 rgb 방식과 달리, 세밀한 색을 선택하지는 못하지만
+    직관적이고 명확한 방식이다.
+    */
+    background-color: red; 
+    /* #000000 방식은 색깔 코드를 나타낸다.
+    #000000부터 #ffffff까지 존재한다.
+    색깔을 코드로 공유하여 쉽게 그 색을 공유할 수 있다.
+    세밀한 색깔의 설정이 가능하다.
+    */
+    background-color: #21c9d2;
+    /* rgb 방식은 삼원색에 기반하여
+    각각 256개의 숫자를 조합한 색을 표시한다.
+    세밀한 색의 배합 조절이 가능하다.
+    */
+    background-color: rgb(94, 94, 58);
+}
+
+/* 이미지 경로 설정을 통해 배경 이미지를 설정한다. */
+.backImg {
+    /* ../는 상위폴더를 기준으로 경로를 설정하겠다는 의미이다.
+    .이 많아질수록 더 상위 폴더로 이동한다.
+    */
+    background-image: url(../img/goyang.webp);
+    /* background-image: url(D:\web_1300_ljs\workspace\img\goyang.webp); */
+}
+
+/* 반복을 중단 */
+.norepeat {
+    background-repeat: no-repeat;
+}
+
+/* x축(가로)으로의 반복만 실행 */
+.repeat_x{
+    background-repeat: repeat-x;
+}
+
+/* 이미지가 잘리지 않을 만큼 반복하며,
+이미지를 같은 간격으로 배치한다.*/
+.repeat_space{
+    background-repeat: space;
+}
+
+/* 배경을 모두 채우되, 그 사이즈나 위치는
+총 개수에 자동으로 맞춰진다.
+일정 크기 이하로 떨어지면 개수가 줄어드는 방식이다. 반대도 마찬가지.
+*/
+.repeat_round{
+    background-repeat: round;
+}
+
+/* 배경 이미지 시작 위치
+background-position
+*/
+.backPosition{
+    /* 배경 이미지의 좌상단 점의 좌표를
+    30px만큼 우측으로 이동, 50px만큼 하단으로 이동한
+    위치에서부터 이미지를 출력한다.
+    */
+    /* background-position: 30px 50px; */
+    /* center로 설정하면 해당 요소의 배경의 중앙에
+    배경 이미지가 위치하게 된다.
+    */
+    background-position: center;
+}
+
+/* background-size:
+auto, cover, contain, 단위로 설정
+배경 이미지의 크기를 설정하는 옵션이다.
+*/
+.backSize {
+    background-size: auto;
+    background-size: cover;
+    background-size: contain;
+    background-size: 300px;
+}
+
+
+
+
+

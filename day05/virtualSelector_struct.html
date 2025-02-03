@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조적 가상 클래스 선택자</title>
+    <link rel="stylesheet" href="selector.css">
+    <style>
+        /* 구조적 가상 클래스 선택자
+        해당 클래스에 속한 요소들 중 상대적인 위치나 관계에 있는 요소를
+        선택하는 선택자다.
+        li:first-child 의 경우, li 태그 중 첫번째 자식 요소인 경우에
+        해당 스타일을 적용한다는 의미이다.
+        */
+        li:first-child {
+            color: red;
+        }
+
+        li:nth-child(2){
+            color: green;
+        }
+
+        li:last-child {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <ol>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ol>
+    </div>
+</body>
+</html>

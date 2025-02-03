@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마진과 패딩</title>
+    <link rel="stylesheet" href="selector.css">
+    <style>
+        .m1 {
+            /* margin
+            해당 요소의 외부여백을 추가하는 속성으로,
+            외부여백이기때문에 다른 요소와 겹치지 않고
+            요소를 밀어낸다.
+            */
+            /* 우측 마진에 10px을 추가 */
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .p1 {
+            /* 요소의 내부 여백을 만들 때 사용하는
+            가상 클래스 선택자로
+            내부 여백이기 때문에 요소의 경계 안쪽으로 들어와서
+            내부 요소를 밀어낸다.
+            */
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="square blue m1"></div>
+    <div class="square green m1 p1"></div>
+</body>
+</html>
