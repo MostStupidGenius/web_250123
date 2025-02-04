@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 전환효과</title>
+    <style>
+        div.square {
+            text-align: center;
+            display: inline-block;
+            min-width: 300px;
+            min-height: 300px;
+            background-color: rgb(255, 0, 0);
+        }
+        
+        .toBlue:hover {
+            /* toBlue 클래스를 가진 요소에 대해서
+            마우스를 올렸을 때 배경색이 파란색으로 변하게 만드는 스타일*/
+            background-color: blue;
+            font-size: 300px;
+            text-justify: auto;
+        }
+        
+        .colorTrans {
+            /* transition-property
+            전환 효과 적용할 속성을 지정
+            여러 속성에 적용하려면 콤마,로 구분하여 여러 속성을 작성해주면 된다.
+            만약 모든 속성에 적용하려면 all을 입력하면 된다.
+            */
+            transition-property: background-color, font-size;
+
+            /* transition-duration
+            전환효과의 지속시간을 설정
+            초 단위의 값을 입력하여 전환이 끝나는 데 걸리는 시간을 지정한다.
+            초는 s,
+            밀리초(1000분의 1초)는 ms
+            */
+            transition-duration: 3000ms;
+            transition-duration: 10s;
+
+            /* transition-delay
+            전환효과 시작 되는 타이밍을 지연시키는 속성이다.
+            */
+            /* transition-delay: 1s; */
+
+            /* transition-timing-function
+            전환효과가 진행되는 동안 속도에 변화를 주는 속성, 기능이다.
+            */
+            /* linear
+            처음부터 끝까지 속도가 일정하다.
+            */
+            transition-timing-function: linear;
+            
+            /* ease
+            속도가 점점 빨라지다가 중간부터 느려진다.
+            */
+            transition-timing-function: ease;
+            /* ease-in
+            느리게 시작해서 점점 빨라진다.
+            */
+            transition-timing-function: ease-in;
+            
+            /* ease-out
+            빠르게 시작해서 점점 느려진다.
+            */
+            transition-timing-function: ease-out;
+            
+            /* ease-in-out
+            느리게 시작, 점점 빨라짐, 다시 느려짐
+            */
+            transition-timing-function: ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 전환효과란
+    요소의 속성값이 다른 값으로 바뀌는 것을 전환이라고 하며
+    이전에 :hover 가상클래스 선택자로 마우스를 올렸을 때 색이 바뀌던 것이
+    전환효과를 적용할 수 있는 한 예시라고 할 수 있다.
+    속성 변경이 당시엔 일순간에 적용되었지만,
+    전환효과를 적용하면 서서히 바뀌게끔 설정할 수 있다.
+    -->
+    <div class="container">
+        <div class="square toBlue colorTrans">
+            <span>text</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* keyframe.css */
+@keyframes translateX1 {
+    /* X축으로 전달한 값만큼 오른쪽으로 이동 */
+    0% {transform: translateX(0);}
+    33% {transform: translate(100px, 100px);}
+    66%{transform: translate(0, 200px);}
+    100% {transform: translateY(0);}
+}
+
+/* 실습 예제
+0%, 100% 시작위치는 0px, 0px
+25% 우측으로 100px만큼 이동, 배경색을 green으로 변경
+50% 하단으로 100px만큼 이동
+75% 좌측으로 100px만큼 이동
+*/

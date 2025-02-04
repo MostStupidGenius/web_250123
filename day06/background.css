@@ -1,0 +1,55 @@
+.img {
+    /* 이미지 링크 연결 */
+    background-image: url("../img/goyang.webp");
+    /* 인라인 블록 레벨로 수정 */
+    display: inline-block;
+}
+
+.square {
+    min-width: 312px;
+    min-height: 312px;
+}
+
+.back_clip {
+    font-size: 300px;
+    text-align: center;
+
+    /* border-box
+    태그 요소의 경계선의 외곽까지 이미지가 표시된다*/
+    background-clip: border-box;
+    /* content-box
+    패딩도 제외한 실제 안쪽 내용만 이미지가 표시된다.*/
+    background-clip: content-box;
+    /* padding-box
+    태그 요소의 경계선 안쪽, 패딩 영역까지만 이미지가 표시된다.*/
+    background-clip: padding-box;
+    /* text
+    해당 태그 요소의 텍스트 색 대신에 배경 이미지가 표시된다.
+    배경 이미지를 텍스트 위치에 표시하려면 기본 색상을
+    투명으로 설정해주어야 한다. */
+    /* background-clip: text;
+    color: transparent; */
+}
+
+.origin {
+    /* 배경 속성 origin
+    배경 이미지의 위치 기준을 설정한다. 기본값은 패딩 박스*/
+    background-origin: padding-box;
+    /* border-box
+    경계선을 기준으로 이미지 시작 위치가 설정된다.*/
+    background-origin: border-box;
+    /* content-box
+    패딩 안쪽의 영역에서부터 시작하기 때문에
+    이미지를 패딩영역까지 표시하게 되면 패딩 영역에 일부 이미지가 표시되고
+    이미지의 시작위치는 안쪽 영역 좌상단으로 시작된다.*/
+    background-origin: content-box;
+}
+
+.blend {
+    /* 블렌드 모드는
+    배경색과 이미지를 함께 썼을 때 어떻게 섞을지를 결정하는 속성이다.
+    배경색과 이미지 중 하나라도 없으면 의미가 없다.
+    기본값은 이미지가 있을 경우 배경색을 무시하는 normal이다.*/
+    background-color: brown;
+    background-blend-mode: normal;
+}

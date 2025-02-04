@@ -1,0 +1,64 @@
+/* animation.css */
+/* animation 속성 정의
+@keyframes 키프레임명 {}
+위와 같이 키프레임 블록을 이용해서 기본적인 정의를 해놓고
+해당 키프레임을 이용해 특정 요소에 애니메이션을 적용할 수 있다.
+*/
+@keyframes moveToX {
+    /* x축 방향으로 요소를 이동시키는 애니메이션 */
+    /* %로 진행도에 따라 애니메이션을 정의해야 한다. */
+    0% {transform: translateX(0);}
+    /* 50% {transform: translateX(300px);} */
+    100% {transform: translateX(300px);}
+}
+
+.move:hover {
+    animation-name: moveToX;
+    animation-duration: 3s;
+    /* animation-timing-function: ease-in; */
+    /* animation-delay: 2s; */
+    /* animation-iteration-count
+    애니메이션 반복횟수 설정
+    기본값은 1이고 횟수를 설정할 수 있다.
+    무한반복을 하려면 infinite로 설정하면 된다.
+    */
+    animation-iteration-count: 1;
+
+    /* animation-direction
+    애니메이션의 재생 방향을 설정한다.
+    기본값 normal
+    reverse: 반대방향으로 진행
+    alternate: 왕복 진행
+    alternate-reverse: 반대방향으로 왕복 진행
+    */
+    /* animation-direction: alternate; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+
+    /* animation-fill-mode
+    애니메이션이 끝난 후 또는 시작 전의 상태를 설정한다.
+    none, forwards, backwards, both
+    */
+    /* none
+    기본값으로, 상태를 설정하지 않음
+    */
+    animation-fill-mode: none;
+    /* 끝난 후 상태로 유지 */
+    /* animation-fill-mode: forwards; */
+    /* 처음 시작 상태로 돌아옴 */
+    /* animation-fill-mode: backwards; */
+    /* 두 상태를 조합하여 결과 보여줌 */
+    animation-fill-mode: both;
+
+    /* animation-play-state
+    애니메이션의 재생 또는 일시 정지 상태를 설정한다.
+    running, paused*/
+    /* animation-play-state: running; */
+    /* 속성값을 running으로 변경하기 전까지
+    애니메이션은 중단된다.*/
+    /* animation-play-state: paused; */
+    
+
+
+
+}

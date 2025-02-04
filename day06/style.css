@@ -1,0 +1,6 @@
+.square {
+    display: inline-block;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: rgb(38, 169, 121);
+}

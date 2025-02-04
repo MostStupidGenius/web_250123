@@ -1,0 +1,43 @@
+/* position.css */
+.relative {
+    /* 위치 속성 static 기본값
+    기본적인 문서 흐름에서 벗어나지 않는다.*/
+    /* 위치 속성 relative
+    기본적으로 static과 동일하지만 top, left, right, bottom 등의
+    값을 조절하여 상대적인 위치로 이동할 수 있다.
+    */
+    position: relative;
+}
+
+.relmove {
+    top: 20px;
+    left: 10px;
+}
+
+.abs {
+    position:absolute;
+}
+
+.square {
+    display: inline-block;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: rgb(38, 169, 121);
+}
+
+.scroller{
+    display: inline-block;
+    min-height: 3000px;
+    min-width: 350px;
+    background-image: url("../img/goyang.webp");
+}
+
+.fixed{
+    /* 위치 속성 fixed는
+    스크롤을 내리더라도 브라우저창을 기준으로 배치되기 때문에
+    마치 화면상에 고정된 것처럼 보인다.
+    위로가기 버튼, 챗봇버튼, 빠른이동 버튼, 상단의 메뉴 바 등을
+    화면상에 고정하기 위해 자주 쓰인다.
+    */
+    position: fixed;
+}
