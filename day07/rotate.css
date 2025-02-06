@@ -1,0 +1,10 @@
+/* rotate.css
+tranform 속성 중 회전을 담당하는 기능이다.
+rotate(90deg)와 같은 방식으로 각도를 주어서
+해당 요소를 시계방향으로 회전시키는 기능을 한다.
+양수->시계방향
+음수->반시계방향
+*/
+.rotate45{
+    transform: rotate(45deg);
+}

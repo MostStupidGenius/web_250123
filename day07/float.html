@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 속성</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #left {
+            background-color: aqua;
+        }
+        #right {
+            background-color: brown;
+        }
+
+        /* float
+        문서 흐름에서 벗어나 부모 태그 영역 안에서
+        띄워지는 형태로 위치하게 된다.
+        - 주변 텍스트나 인라인 요소가 float된 요소를 감싼다.
+        - block 요소의 경우 float된 요소를 인식하지 못하고 겹치게 된다.
+        */
+        .left {
+            float: left;
+        }
+
+        .right{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        1 2 3 4 5
+        <div id="left" class="square left"></div>
+        6 7 8 9 10
+        <div id="right" class="square right"></div>
+        11 12 13 14 15
+    </div>
+</body>
+</html>

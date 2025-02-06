@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skew 기울이기</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skew {
+            /* skew
+            transform의 속성 중 기울이기를 담당하는 기능
+            x축 혹은 y축을 기준으로 전달된 값만큼 기울이는 기능을 한다.
+            rotate는 원본의 원형을 유지한 상태로 움직였다면
+            skew는 원본을 기울이면서 늘리는 방식으로 동작한다
+            때문에, 잘만 구성하면 마치 해당 요소가 3D로 회전하는 것처럼
+            표현할 수도 있다.
+            */
+            transform: skew(45deg, 45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square cat skew"></div>
+    </div>
+</body>
+</html>

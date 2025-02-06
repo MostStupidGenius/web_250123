@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale 크기 조정</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cat {
+            background-image: url(../img/goyang.webp);
+        }
+        .scale {
+            /* scale
+            x, y 방향으로 n배로 늘리거나 줄이는 기능을 한다.
+            그런데 음수를 주면 x에 대해서는 좌우 반전,
+            y에 대해서는 상하 반전이 일어난다.
+
+            둘 다 음수를 주는 경우 180도 회전한 것과 동일한 결과를
+            볼 수 있다.
+            */
+            transform: scale(-1, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square cat scale"></div>
+    </div>
+</body>
+</html>

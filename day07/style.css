@@ -1,0 +1,13 @@
+/* style.css
+공통 사용 css 정의
+*/
+.square {
+    display: inline-block;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: rgb(212, 50, 50);
+}
+
+.cat {
+    background-image: url(../img/goyang.webp);
+}

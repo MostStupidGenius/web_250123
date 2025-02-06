@@ -7,3 +7,8 @@
 /* 실습예제를 여기서 적용해보기 
 .practice1 클래스로 정의
 */
+.practice1:hover {
+    animation-name: practice;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}

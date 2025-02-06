@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matrix 변형 통합 적용</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .matrix {
+            /* transform 속성에 대해서
+            여러가지 변형을 동시에 적용하기 위해 사용하는 속성이 matrix이다.
+            matrix(a, b, c, d, e, f)
+            a: scaleX의 값을 설정
+            b: skewY의 값을 설정(각도가 아닌 숫자)
+            c: skewX의 값을 설정(각도가 아닌 숫자)
+            d: scaleY의 값을 설정
+            e: translateX의 값을 설정
+            f: translateY의 값을 설정
+            */
+            transform: matrix(1.8, 0.6, 0.7, 0.6, 217, 26);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square cat matrix"></div>
+    </div>
+</body>
+</html>

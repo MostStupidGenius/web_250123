@@ -1,0 +1,32 @@
+/* transform.css
+transform 속성
+요소의 이동, 크기 조정, 회전, 기울기 등 변형을 가할 수 있는
+속성이다.
+*/
+
+/* translate()
+전달한 길이만큼 해당 요소를 이동시키는 속성, 기능이다.
+독립적으로 쓰기보다는 animation 같은 움직임을 주는 기능과
+함께 쓰인다.
+*/
+.x100{
+    /* translateX()
+    전달한 값만큼 해당 요소가 우측으로 이동
+    양수->우측
+    음수->좌측
+    */
+    transform: translateX(100px);
+}
+
+.y100{
+    /* translateY()
+    전달한 값만큼 해당 요소가 아래로 이동
+    양수-> 아래로
+    음수-> 위로
+    */
+    transform: translateY(100px);
+}
+
+/* x, y 좌표를 동시에 이동할 때에는
+translate(x, y)와 같이 입력할 수 있다.
+*/
